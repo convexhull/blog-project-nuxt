@@ -3,37 +3,18 @@
     <section class="intro">
       <h1>Get the latest tech news</h1>
     </section>
-    <section class="featured-posts">
-      <PostPreview
-        id = "1"
-        thumbnail = "https://images.techhive.com/images/article/2016/11/computerworld_tech_forecast_2017_hottest-tech-skills-for-2017-100692085-large.jpg"
-        title = "Hello"
-        previewText = "This is my first post"
-      />
-      <PostPreview
-        id = "2"
-        thumbnail = "https://images.techhive.com/images/article/2016/11/computerworld_tech_forecast_2017_hottest-tech-skills-for-2017-100692085-large.jpg"
-        title = "Hello there"
-        previewText = "This is my second post"
-      />
-      <PostPreview
-        id = "3"
-        thumbnail = "https://images.techhive.com/images/article/2016/11/computerworld_tech_forecast_2017_hottest-tech-skills-for-2017-100692085-large.jpg"
-        title = "Hello there again"
-        previewText = "This is my third post"
-      />
-    </section>
+    <PostList />
   </div>
 </template>
 
 
  <script>
 
-import PostPreview from '~/components/Posts/PostPreview';
+import PostList from '~/components/Posts/PostList';
 
  export default {
   components : {
-    PostPreview
+    PostList
   }
  }
  </script>
@@ -46,6 +27,7 @@ import PostPreview from '~/components/Posts/PostPreview';
   position: relative;
   padding: 30px;
   box-sizing: border-box;
+  background-image : url('~assets/images/main-page-background.jpg');
   background-position: center;
   background-size: cover;
 }
